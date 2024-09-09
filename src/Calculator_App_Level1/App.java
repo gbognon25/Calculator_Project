@@ -88,14 +88,14 @@ public class App {
                     break;
                 }
 
-//                else if (more_operation.equals("more")) {
-//
-//                }
-//
-//                else {
-//                    System.out.println("Error!");
-//                    System.exit(0);
-//                }
+                else if (more_operation.equals("more")) {
+                    continue;
+                }
+
+                else {
+                    System.out.println("Error!");
+                    System.exit(0);
+                }
             }
         }
     }
