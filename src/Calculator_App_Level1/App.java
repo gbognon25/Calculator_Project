@@ -79,7 +79,7 @@ public class App {
                 }
                 System.out.println();
 
-                System.out.println("더 계산하시겠습니까? 'More' 누른시 다른 계산 가능, 'exit' 입력시 종료: ");
+                System.out.println("더 계산하시겠습니까? 'more' 누른시 다른 계산 가능, 'exit' 입력시 종료: ");
 //                System.out.print("원하는 작업을 입력하세요: ");
                 String more_operation = input.next();
                 System.out.println();
