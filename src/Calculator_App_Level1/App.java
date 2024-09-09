@@ -31,7 +31,7 @@ public class App {
 
             else {
 
-                double result = 0;
+                double result;
                 double error = Double.NaN;
 
                 switch (operator) {
@@ -79,8 +79,8 @@ public class App {
                 }
                 System.out.println();
 
-                System.out.println("더 계산하시겠습니까? 'more' 입력시 다른 계산 가능, 'exit' 입력시 종료.");
-                System.out.print("원하는 작업을 입력하세요: ");
+                System.out.print("더 계산하시겠습니까? 'more' 입력시 다른 계산 가능, 'exit' 입력시 종료.");
+//                System.out.print("원하는 작업을 입력하세요: ");
                 String more_operation = input.next();
                 System.out.println();
 
@@ -88,14 +88,14 @@ public class App {
                     break;
                 }
 
-                else if (more_operation.equals("more")) {
-                    continue;
-                }
-
-                else {
-                    System.out.println("Error!");
-                    System.exit(0);
-                }
+//                else if (more_operation.equals("more")) {
+//
+//                }
+//
+//                else {
+//                    System.out.println("Error!");
+//                    System.exit(0);
+//                }
             }
         }
     }
