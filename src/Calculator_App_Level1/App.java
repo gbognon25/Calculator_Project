@@ -21,7 +21,9 @@ public class App {
 
             System.out.println();
 
-            //양의 정수 입력 조건 (Condition for positives numbers)
+
+
+            // Set a condition for positive number(양수의 입력 조건)
             if (num1 < 0 || num2 < 0) {
                 System.out.println("양의 정수만 계산 가능.");
                 System.out.println();
