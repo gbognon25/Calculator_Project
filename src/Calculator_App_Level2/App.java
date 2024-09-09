@@ -48,10 +48,6 @@ public class App {
                     System.out.println(calculator.getAllResults());
                 }
 
-                else if (answer.equals("N")) {
-                    System.out.println(calculator.getAllResults());
-                }
-
                 System.out.println();
 
                 // 무한 loop 종료 조건
