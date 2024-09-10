@@ -42,13 +42,13 @@ public class App {
                 System.out.print("첫 번째 결과를 삭제하시겠습니까? 'Y' 또는 'N' 입력하세요: ");
                 String answer = input.next();
 
-                if (answer.equals("Y")) {
+                if (answer.equalsIgnoreCase("Y")) {
                     calculator.removeResult();
                     System.out.println("첫 번째 결과가 삭제되었습니다.");
                     System.out.println(calculator.getAllResults());
                 }
 
-                else if (answer.equals("N")) {
+                else if (answer.equalsIgnoreCase("N")) {
                     System.out.println(calculator.getAllResults());
                 }
 
