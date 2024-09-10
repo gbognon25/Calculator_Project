@@ -84,11 +84,11 @@ public class App {
                 String more_operation = input.next();
                 System.out.println();
 
-                if (more_operation.equals("exit")) {
+                if (more_operation.equalsIgnoreCase("exit")) {
                     break;
                 }
 
-                else if (more_operation.equals("more")) {
+                else if (more_operation.equalsIgnoreCase("more")) {
                     continue;
                 }
 
