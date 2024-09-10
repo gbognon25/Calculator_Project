@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Calculator {
     //클래스의 연산 결과를 저장하고 있는 Collection Field: ArrayList
     //Collection Field에 직접 접근하지 못함: 'private' 접근 제어자 사용
-    private ArrayList<Double> all_results;
+    private ArrayList<Double> all_results = new ArrayList<>();
     private int num1;
     private int num2;
 
     //생성자
-    public Calculator() {
-        all_results = new ArrayList<>();
-    }
+//    public Calculator() {
+//        all_results = new ArrayList<>();
+//    }
 
     //간접 접근을 통해 필드에 접근하여 가져오거나 수정할 수 있는 Getter와 Setter Method
     public int getFirstNumber() {
