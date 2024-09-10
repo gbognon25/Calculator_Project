@@ -62,14 +62,14 @@ public class App {
 
                 if (more_operation.equals("exit")) {
                     break;
-                } else if (more_operation.equals("more")) {
+                }
+                else if (more_operation.equalsIgnoreCase("more")) {
                     continue;
                 } else {
                     System.out.println("Error!");
                     System.exit(0);
                 }
             }
-
         }
     }
 }
