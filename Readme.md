@@ -6,7 +6,7 @@
 - Project Type: 개인 Project
 - Programming language: Java
 - IDE: IntelliJ 2024.1.6
-- Runtime version 17.0.11+1-b1207.30 aarch64
+- Runtime version: 17.0.11+1-b1207.30 aarch64
 - VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
 
 # 기본 기능
