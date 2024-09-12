@@ -8,8 +8,10 @@ public class App {
         Calculator calculator = new Calculator(); // Calculator Class instance화
         Scanner input = new Scanner(System.in);
 
+        String exit_calculator = "";
+
         // 무한 loop 시작
-        while (true) {
+        while (!exit_calculator.equalsIgnoreCase("Exit")) {
 
             //Keybord에서부터 숫자와 연산 기호 입력 받기
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -55,20 +57,20 @@ public class App {
                 System.out.println();
 
                 // 무한 loop 종료 조건
-                System.out.println("더 계산하시겠습니까? 'more' 입력시 다른 계산 가능, 'exit' 입력시 종료.");
+                System.out.print("더 계산하시겠습니까? 'Exit' 누른시 종료. 계속하려면 아무 글자를 눌러주세요: ");
 //                System.out.print("원하는 작업을 입력하세요: ");
-                String more_operation = input.next();
+                exit_calculator = input.next();
                 System.out.println();
 
-                if (more_operation.equalsIgnoreCase("exit")) {
-                    break;
-                }
-                else if (more_operation.equalsIgnoreCase("more")) {
-                    continue;
-                } else {
-                    System.out.println("Error!");
-                    System.exit(0);
-                }
+//                if (more_operation.equalsIgnoreCase("exit")) {
+//                    break;
+//                }
+//                else if (more_operation.equalsIgnoreCase("more")) {
+//                    continue;
+//                } else {
+//                    System.out.println("Error!");
+//                    System.exit(0);
+//                }
             }
         }
     }

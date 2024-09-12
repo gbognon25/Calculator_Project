@@ -1,11 +1,13 @@
 package Calculator_App_Level2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Calculator {
     //클래스의 연산 결과를 저장하고 있는 Collection Field: ArrayList
     //Collection Field에 직접 접근하지 못함: 'private' 접근 제어자 사용
-    private ArrayList<Double> all_results = new ArrayList<>();
+//    private ArrayList<Double> all_results = new ArrayList<>();
+    private final List <Double> all_results = new ArrayList<>();
     private int num1;
     private int num2;
 
@@ -32,24 +34,22 @@ public class Calculator {
     }
 
     //첫 번째 저장된 결과값을 삭제하는 Method
-    public void removeResult () {
+    public void removeResult() {
         if (all_results.size() == 0) {
             System.out.println("삭제할 내용이 없습니다.");
-        }
-
-        else {
+        } else {
             all_results.remove(0);
         }
     }
 
     //결과 ArrayList를 반환하는 getter Method
-    public ArrayList<Double> getAllResults() {
-        return new ArrayList<>(all_results);   // ArrayList를 복사해서 반환
+    public List <Double> getAllResults() {
+        return new ArrayList<>(all_results);   // List를 복사해서 반환
     }
 
     //연산을 수행하고 결과를 반환하는 Method
     public double calculate(int num1, int num2, char operator) {
-        double result = 0;
+        double result = 0.0;
 
         switch (operator) {
             case '+':
@@ -68,10 +68,9 @@ public class Calculator {
                 if (num2 == 0) {
                     System.out.println("분모 값이 '0'이기 때문에 계산 불가합니다.");
                     return Double.NaN;
-                }
-
-                else {
-                    result = num1 / num2;
+                } else {
+//                    result = num1 / num2;
+                    result = (double) num1 / num2;
                 }
                 break;
 
@@ -79,8 +78,7 @@ public class Calculator {
                 if (num2 == 0) {
                     System.out.println("분모 값이 '0'이기 때문에 계산 불가합니다.");
                     return Double.NaN;
-                }
-                else {
+                } else {
                     result = num1 % num2;
                 }
                 break;
