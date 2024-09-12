@@ -35,7 +35,7 @@ public class Calculator {
 
     //첫 번째 저장된 결과값을 삭제하는 Method
     public void removeResult() {
-        if (all_results.size() == 0) {
+        if (all_results.isEmpty()) {
             System.out.println("삭제할 내용이 없습니다.");
         } else {
             all_results.remove(0);
