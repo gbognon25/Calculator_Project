@@ -6,9 +6,10 @@ public class App {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        String exit_calculator = "";
+        String exit_calculator = "";   // Exit 조건의 변수 선언
+
         double result = 0.0;
-        double error = Double.NaN;
+        double error = Double.NaN;    //'Not a Number' 변수 선언
 
         //무한 loop 시작
 //        while (true) {
